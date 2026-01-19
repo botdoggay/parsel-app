@@ -5,9 +5,19 @@ alert("map.js çalıştı");
 ================================ */
 const map = L.map("map").setView(CONFIG.baslangic, CONFIG.zoom);
 
+
+
 L.tileLayer(
  "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
 ).addTo(map);
+
+// SAFARI TEST TILE (GEÇİCİ)
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+  maxZoom: 19
+}).addTo(map);
+
+
+
 const mahalleler = [
  { ad: "KARAHASANLI", lat: 37.8091279, lng: 28.9774192, zoom: 13 },
  { ad: "ŞEMİKLER", lat: 37.8052527, lng: 29.0336559, zoom: 14 },
