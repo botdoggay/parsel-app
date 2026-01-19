@@ -7,9 +7,7 @@ const map = L.map("map").setView(CONFIG.baslangic, CONFIG.zoom);
 
 
 
-L.tileLayer(
- "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}"
-).addTo(map);
+
 
 // SAFARI TEST TILE (GEÇİCİ)
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
