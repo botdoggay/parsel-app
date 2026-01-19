@@ -3,11 +3,6 @@ alert("map.js çalıştı");
 /* ===============================
    HARİTA
 ================================ */
-const map = L.map("map").setView(CONFIG.baslangic, CONFIG.zoom);
-
-
-
-
 
 // SAFARI TEST TILE (GEÇİCİ)
 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
