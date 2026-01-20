@@ -1,0 +1,142 @@
+
+body { margin:0; font-family:Arial,sans-serif; }
+#map { width:100%; height:100vh; }
+
+#panel {
+ position:absolute; top:15px; right:15px; z-index:1000;
+}
+#panel button { padding:8px 12px; cursor:pointer; }
+
+#formPanel {
+ margin-top:10px; background:#fff; padding:10px; width:220px;
+ border-radius:6px; box-shadow:0 0 10px rgba(0,0,0,.3);
+}
+#formPanel input { width:100%; margin-bottom:6px; }
+
+.leaflet-control-tabs {
+ background:#fff; padding:8px; width:250px;
+ border-radius:8px;
+ box-shadow:0 2px 6px rgba(0,0,0,.3);
+ font-size:13px;
+}
+
+.tab-buttons { display:flex; gap:4px; margin-bottom:6px; }
+.tab-buttons button { flex:1; padding:4px; cursor:pointer; }
+
+.tab-content { display:none; }
+.tab-content.active { display:block; }
+
+.leaflet-control-tabs input,
+.leaflet-control-tabs textarea,
+.leaflet-control-tabs select {
+ width:100%; margin-bottom:5px; padding:4px;
+}
+.sol-panel {
+ background: white;
+ padding: 10px;
+ width: 200px;
+ border-radius: 8px;
+ box-shadow: 0 0 10px rgba(0,0,0,0.4);
+ font-size: 13px;
+}
+
+.sol-panel h4 {
+ margin: 6px 0;
+}
+
+.sol-panel input,
+.sol-panel select,
+.sol-panel button {
+ width: 100%;
+ margin-bottom: 6px;
+ padding: 4px;
+}
+
+.sol-panel button {
+ cursor: pointer;
+}
+.ozellik-panel {
+ width: 220px;
+ font-size: 13px;
+}
+
+.ozellik-panel textarea {
+ width: 100%;
+ margin-bottom: 6px;
+ resize: vertical;
+}
+
+.ozellik-panel button {
+ width: 100%;
+ padding: 6px;
+ cursor: pointer;
+}
+.toast {
+ position: fixed;
+ bottom: 20px;
+ left: 50%;
+ transform: translateX(-50%);
+ background: #2ecc71;
+ color: white;
+ padding: 10px 20px;
+ border-radius: 6px;
+ opacity: 0;
+ transition: all 0.3s;
+ z-index: 9999;
+ font-weight: bold;
+}
+.toast.show {
+ opacity: 1;
+ bottom: 40px;
+}
+.tabBtn {
+ border:1px solid #ccc;
+ background:#eee;
+ cursor:pointer;
+}
+
+.tabBtn.aktif {
+ background:#4287f5;
+ color:white;
+}
+#solMenu {
+ position: absolute;
+ top: 15px;
+ left: 15px;
+ z-index: 1200;
+}
+
+#menuBtn {
+ padding: 8px 12px;
+ font-size: 14px;
+ cursor: pointer;
+ border-radius: 6px;
+ border: 1px solid #ccc;
+ background: #fff;
+}
+
+#menuPanel {
+ margin-top: 6px;
+ background: #fff;
+ padding: 10px;
+ width: 220px;
+ border-radius: 8px;
+ box-shadow: 0 0 12px rgba(0,0,0,0.35);
+ font-size: 13px;
+}
+
+#menuPanel h4 {
+ margin: 6px 0;
+}
+
+#menuPanel input,
+#menuPanel select,
+#menuPanel button {
+ width: 100%;
+ margin-bottom: 6px;
+ padding: 5px;
+}
+
+#menuPanel button {
+ cursor: pointer;
+}
